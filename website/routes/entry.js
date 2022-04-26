@@ -7,8 +7,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-//   res.render('entry', {title: 'Testing stuff', "elastic": 1});
-  res.render('entry');
-});
+  // choose entry point (debug)
+
+  res.sendFile('entry.html', {root: './views'})
+  // res.sendFile('alice.html', {root: './views'})
+  // res.sendFile('bob.html', {root: './views'})
+
+  });
 
 module.exports = router;
