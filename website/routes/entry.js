@@ -12,9 +12,9 @@ router.get('/', function(req, res, next) {
   // choose entry point (debug)
   res.locals.user_code = Math.floor(Math.random() * 10000) // randomly generate code
 
-  res.sendFile('entry.html', {root: './views'})
-  // res.sendFile('alice.html', {root: './views'})
-  // res.sendFile('bob.html', {root: './views'})
+  //res.sendFile('entry.html', {root: './views'})
+  //res.sendFile('alice.html', {root: './views'})
+  res.sendFile('bob.html', {root: './views'})
 
 });
 
