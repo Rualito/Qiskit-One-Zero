@@ -36,7 +36,7 @@ var server = app.listen(port, ip_addr, function () {
     console.log('Listening at http://%s:%s', host, port);
 });
 
-console.log("Address: " + ip_addr + ":"+port)
+// console.log("Address: " + ip_addr + ":"+port)
 server.on('error', onError);
 server.on('listening', onListening);
 
