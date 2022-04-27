@@ -28,4 +28,24 @@ Our following elementrary level tutorial _Silver_ is under revision now, and we 
 
 ## Quantum Mechanics explanation
 
+Quantum communication will be based on two quantum basis: the computational basis \|0\> and \|1\>, and the Hadamard basis 1/sqrt(2)\*(\|0\> + \|1\>) and 1/sqrt(2)\*(\|0\> - \|1\>). When a Quantum user generates a random bit associated with these basis we choose 0 as the computational basis and 1 as the Hadamard basis.
+
+When measured, we apply Hadamard gate on the Hadamard basis Qubits and the Identity gate at the computational basis. |0> and 1/sqrt(2)\*(|0> + |1>) are interpretated as bit 0 and |1> and 1/sqrt(2)\*(|0> - |1>) are interpretated as bit 1.
+
+- Alice and Bob publicly agree upon a number N, this number should be at least 2 times the key length that they expect to get. They also agree who will be the sender and who will be the receiver.
+- Alice generates N random bits (using a Quantum random generator, at the best scenario, but she can use a pseudo-random generator like /dev/random) and maps them to Quantum basis.
+- Alice generates N random bits and creates the required states using the previous random basis. She then sends these Qubits through the quantum channel (i.e. Fibre Optic with polarized Photons) So:
+	
+-	Basis | Bits | State
+	------| -----|-----
+	0     | 0    | \|0\>
+	0     | 1    | \|1\>
+	1     | 1    | 1/sqrt(2)\*(\|0\> + \|1\>)
+	1     | 1    | 1/sqrt(2)\*(\|0\> - \|1\>)
+- Bob generates N random bits and maps them to their quantum basis.
+- Bob measured the received Qubits from Alice with his basis, he then gets the measured bits.
+- Alice and Bob exchange publicly their basis and compare them locally.
+- Alice and Bob drop the bits where their basis doesn't match, the remaining bits will be the agreed key. If the key length is may below N/2 then they consider a MITM attack happened.
+- Alice sends and encrypted "Hello" message to Bob with that key. If Bob can't decrypt the message with his key then a MITM ocurred (or decoherence), otherwise they have their key for encryption.
+
 
