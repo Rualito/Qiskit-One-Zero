@@ -15,9 +15,9 @@ Prerequisites for this lecture the fundamental quantum gates and working with Py
 
 Find exercise solutions (part 1 of the challenge) [here](https://github.com/Rualito/Qiskit-One-Zero/tree/main/exercises-Part1)
 
-For giving the lecture, please follow the lecture outline, to be found here.
+For giving the lecture, please follow the lecture outline, [to be found here](https://github.com/Rualito/Qiskit-One-Zero/blob/main/lecture_plan.pdf).
 Additional material:
-1. Lecture slides ([here](https://github.com/Rualito/Qiskit-One-Zero))
+1. Lecture slides ([here](https://github.com/Rualito/Qiskit-One-Zero/blob/main/QKD_Presentation.pdf))
 2. Interactive website for demonstrating BB84 ([prototype here](https://github.com/Rualito/Qiskit-One-Zero/tree/main/website))
 3. Jupyter notebook incl. demonstration + exercises (found in [this folder](https://github.com/Rualito/Qiskit-One-Zero/tree/main/exercise-Part2_Lecture))
 
