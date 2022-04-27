@@ -5,7 +5,7 @@
 
 ### Repository Description 
 
-This repository is the work contributed by the group "One Zero" for the Qiskit Hackathon @ World of QUANTUM 2022. It contains the solutions of the proposed challenges and a lesson on quantum key distribution meant for undergratue students. The lesson consists of slides introducing QKD and the BB84 protocoland  a jupyter notebook containing a hands-on tutorial and exercises on the topic. 
+This repository is the work contributed by the group "One Zero" for the Qiskit Hackathon @ World of QUANTUM 2022 ([original repository](https://github.com/qiskit-community/Qiskit-Hackathon-at-World-of-QUANTUM)). It contains the solutions of the proposed challenges and a lesson on quantum key distribution meant for undergratue students. The lesson consists of slides introducing QKD and the BB84 protocoland  a jupyter notebook containing a hands-on tutorial and exercises on the topic. 
 
 ### Prerequisites
 
