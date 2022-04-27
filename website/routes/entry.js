@@ -9,8 +9,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   // choose entry point (debug)
 
-  res.sendFile('entry.html', {root: './views'})
-  // res.sendFile('alice.html', {root: './views'})
+  //res.sendFile('entry.html', {root: './views'})
+  res.sendFile('alice.html', {root: './views'})
   // res.sendFile('bob.html', {root: './views'})
 
   });
