@@ -5,7 +5,7 @@
 
 ### Repo Description 
 
-The repository contains the solutions to the proposed challenges and a lesson on Quantum Key Destribution. The lesson consists of a jupyter notebook that contains a hands-on tutorial and exercises on the topic and slides that introduce QKD in a lecture format. 
+The repository contains the solutions of the proposed challenges and a lesson on Quantum Key Destribution meant for undergratue students. The lesson consists of a jupyter notebook that contains a hands-on tutorial and exercises on the topic and slides that introduce QKD in a lecture format. 
 
 ### Prerequisite
 
