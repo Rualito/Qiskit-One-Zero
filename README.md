@@ -9,7 +9,7 @@ The repository contains the solutions to the proposed challenges and a lesson on
 
 ### Prerequisite
 
-The only prerequisite is to know the basics of programming (variables and basic data types, loops, and conditionals). Any previous experience in python will be helpful. If you do not have any such experince, you can check our notebooks on python before starting the tutorial.
+Prerequisites are knowing the basics of Qiskit and basic variables and data types, loops and conditionals in python. Any previous experience with basic quantum mechanics will be helpful.
 
 ## Protocol step-by-step
 
