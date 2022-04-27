@@ -3,7 +3,7 @@
 **Quantum Key Distribution (QKD)** does a key exchange between Alice and Bob, with or without an Eve (as specified by the input variable). The function returns True if they got the same key and False otherwise.  It is important to mention that the length of the key will average half the length of the random bits that Alice and Bob agreed on before. If Eve is present, then Alice and Bob will not have matching keys, resulting in communication failure between them. If someone generates enough iterations, it may be that Alice and Bob will have the same key, but this is random. 
 
 
-### Repo Description 
+### Repository Description 
 
 The repository contains the solutions of the proposed challenges and a lesson on Quantum Key Destribution meant for undergratue students. The lesson consists of a jupyter notebook that contains a hands-on tutorial and exercises on the topic and slides that introduce QKD in a lecture format. 
 
