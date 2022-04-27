@@ -1,27 +1,27 @@
 # Qiskit-One-Zero
 
-**Quantum Key Distribution (QKD)** does a key exchange between Alice and Bob, with or without an Eve (as specified by the input variable). The function returns True if they got the same key and False otherwise.  It is important to mention that the length of the key will average half the length of the random bits that Alice and Bob agreed on before. If Eve is present, then Alice and Bob will not have matching keys, resulting in communication failure between them. If someone generates enough iterations, it may be that Alice and Bob will have the same key, but this is random. 
+**Quantum Key Distribution (QKD)** is a scheme for quantum-secure communication. The basic idea of the scheme consists of two parties establishing a shared secret - a quantum-mechanically generated key, that can be used for encryption. We are interested in the implementation of quantum key distribution mainly because modern day classical encryption - e.g. the RSA algorithm - is partly based on mathematically hard problems, such as prime factorization, that may be solved more easily with future quantum computers. In other words, the advancement of powerful quantum computers is going to be troublesome for communication security. Thus quantum key distribution is one of the counter-measures that can be taken to make secure communication possible in the future.
 
 
 ### Repository Description 
 
-The repository contains the solutions of the proposed challenges and a lesson on Quantum Key Destribution meant for undergratue students. The lesson consists of a jupyter notebook that contains a hands-on tutorial and exercises on the topic and slides that introduce QKD in a lecture format. 
+This repository is the work contributed by the group "One Zero" for the Qiskit Hackathon @ World of QUANTUM 2022. It contains the solutions of the proposed challenges and a lesson on quantum key distribution meant for undergratue students. The lesson consists of slides introducing QKD and the BB84 protocoland  a jupyter notebook containing a hands-on tutorial and exercises on the topic. 
 
-### Prerequisite
+### Prerequisites
 
-Prerequisites are knowing the basics of Qiskit and basic variables and data types, loops and conditionals in python. Any previous experience with basic quantum mechanics will be helpful.
+Prerequisites for this lecture the fundamental quantum gates and working with Python and Qiskit. Some previous knowledge in quantum mechanics (e.g. from earlier qiskit lectures) is necessary.
 
-### Protocol step-by-step
+### The material
 
-- Alice and Bob publicly agree on a number N, this number must be at least 2 times the length of the key they hope to obtain. 
-- Alice generates N random bits and maps them to Quantum basis.
-- Alice creates the required states using the previous random basis. She then sends these Qubits through the quantum channel
-- Bob generates N random bits and maps them to their quantum basis.
-- Bob measured the received Qubits from Alice with his basis, he then gets the measured bits.
-- Alice and Bob exchange publicly their basis and compare them locally.
-- Alice and Bob drop some bits where their base does not match, the remaining pieces will be the agreed key. If the length of the key is less than N/2, then they consider that a attack has happened.
+Find exercise solutions (part 1 of the challenge) [here](https://github.com/Rualito/Qiskit-One-Zero/tree/main/exercises-Part1)
 
-## References
+For giving the lecture, please follow the lecture outline, to be found here.
+Additional material:
+1. Lecture slides ([here](https://github.com/Rualito/Qiskit-One-Zero))
+2. Interactive website for demonstrating BB84 ([prototype here](https://github.com/Rualito/Qiskit-One-Zero/tree/main/website))
+3. Jupyter notebook incl. demonstration + exercises (found in [this folder](https://github.com/Rualito/Qiskit-One-Zero/tree/main/exercise-Part2_Lecture))
+
+## Additional References
 
 [1] https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html
 
