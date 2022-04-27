@@ -24,6 +24,8 @@ Prerequisites are knowing the basics of Qiskit and basic variables and data type
 ## References
 
 [1] https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html
+
 [2] https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.441
+
 [3] https://medium.com/quantum-untangled/quantum-key-distribution-and-bb84-protocol-6f03cc6263c5
 
