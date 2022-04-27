@@ -4,7 +4,7 @@
 
         </title>
         <link rel="stylesheet" href="/stylesheets/bob.css">
-        
+        <script src=”/socket.io/socket.io.js”></script>
         <script>
 
         </script>
@@ -18,14 +18,14 @@
         </div> -->
         <div class="horizontal select-basis">
             <h2>Basis sequence</h2>
-            <input type="text" id="select-basis">
+            <input type="text" id="select-basis" onsubmit="bob_send_basis()">
             <button>Random</button>
         </div>
         <!-- Starts invisible -->
         <div class="horizontal received-qubits">
             <h2>Sent qubits</h2>
             <p id="received-qubits">____</p>
-            <button disabled="true">Compare Basis</button>
+            <button disabled="true" onclick="bob_compare_basis()">Compare Basis</button>
         </div>
         <div class="key-bits">
             <p id="key-bits"></p>

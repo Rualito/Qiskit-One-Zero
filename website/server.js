@@ -4,13 +4,24 @@ var path = require('path');
 // const cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+let package = require("./package.json");
 
 var app = express();
+// Creating Http Server from Express App to work with socket.io
+const http = require('http').Server(app);
 
-var entryRouter = require("./routes/entry")
+const io = require('socket.io')(http,{
+    // Specifying CORS 
+    cors: {
+    origin: "*",
+    }
+})
 
-var aliceRouter = require("./routes/alice")
-var bobRouter = require("./routes/bob");
+
+var entryRouter = require("./routes/backend")
+
+// var aliceRouter = require("./routes/alice")
+// var bobRouter = require("./routes/bob");
 
 app.set('views', path.join(__dirname, 'views'));
 // app.engine('html', require('ejs').renderFile)
@@ -25,6 +36,8 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.use('/', entryRouter)
+// app.use('/alice', aliceRouter)
+// app.use('/bob', bobRouter)
 
 // app.use(function(req, res, next) {
 //     next(createError(404));

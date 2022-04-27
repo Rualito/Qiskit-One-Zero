@@ -26,7 +26,7 @@ function bob_send_basis(){
         }
     }
 
-    xmlHttp.open("GET", "bob/?basis="+basis_str)
+    xmlHttp.open("GET", "bob/data/?basis="+basis_str)
     xmlHttp.send(null)
 }
 

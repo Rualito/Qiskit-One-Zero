@@ -4,8 +4,9 @@
 
         </title>
         <link rel="stylesheet" href="/stylesheets/alice.css">
+        <script src=”/socket.io/socket.io.js”></script>
         <script>
-
+            
         </script>
     </head>
     <body>
@@ -17,7 +18,7 @@
         </div>
         <div class="horizontal select-basis">
             <h2>Basis sequence</h2>
-            <input type="text" id="select-basis">
+            <input type="text" id="select-basis" onsubmit="alice_send()">
             <button>Random</button>
         </div>
         <!-- Starts invisible -->
