@@ -105,11 +105,29 @@ router.get('/', function(req, res, next) {
     // codeIPMap[local_code] = clientIp
     // ipCodeMap[clientIp] = local_code
     res.sendFile('entry.html', {root: './views'})
-    // res.render('entry', {root: './views'})
+    res.sendFile('alice.html', {root: './views'})
+    res.sendFile('bob.html', {root: './views'})
+
+});
+
+router.get('/entry', function(req, res, next) {
+    res.sendFile('entry.html', {root: './views'})
     // res.sendFile('alice.html', {root: './views'})
     // res.sendFile('bob.html', {root: './v iews'})
 
 });
+router.get('/alice', function(req, res, next) {
+    res.sendFile('alice.html', {root: './views'})
+    // res.sendFile('alice.html', {root: './views'})
+    // res.sendFile('bob.html', {root: './v iews'})
+});
+router.get('/bob', function(req, res, next) {
+    // res.sendFile('entry.html', {root: './views'})
+    // res.sendFile('alice.html', {root: './views'})
+    res.sendFile('bob.html', {root: './views'})
+
+});
+
 
 router.get("/alice", (req, res, next) => {
     res.sendFile('alice.html', {root: './views'})
