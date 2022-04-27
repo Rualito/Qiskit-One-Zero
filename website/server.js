@@ -10,18 +10,11 @@ var app = express();
 // Creating Http Server from Express App to work with socket.io
 const http = require('http').Server(app);
 
-const io = require('socket.io')(http,{
-    // Specifying CORS 
-    cors: {
-    origin: "*",
-    }
-})
-
 
 var entryRouter = require("./routes/backend")
 
-// var aliceRouter = require("./routes/alice")
-// var bobRouter = require("./routes/bob");
+var aliceRouter = require("./routes/alice")
+var bobRouter = require("./routes/bob");
 
 app.set('views', path.join(__dirname, 'views'));
 // app.engine('html', require('ejs').renderFile)
