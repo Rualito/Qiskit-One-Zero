@@ -24,10 +24,12 @@ function alice_send() {
                     send_str += d_bits[ Math.floor(bits_str.charAt(i)) ]
                 }   
             }
-
+            console.log(`Alice:\n\tBasis: ${basis_str}, Bits: ${bits_str}`)
             let sent_text = document.getElementById('sent-bits')
             sent_text.innerHTML = send_str
-        
         }
     }
+
+    xmlHttp.open("GET", "alice/?basis="+basis_str+"?bits="+bits_str)
+    xmlHttp.send(null)
 }
